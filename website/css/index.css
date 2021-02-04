@@ -1,0 +1,239 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a {
+  color: black;
+  text-decoration: none;
+}
+
+div#wrapper footer, div#wrapper main, div#wrapper header div#headContent {
+  width: 80%;
+  margin: 0px auto;
+}
+
+div#wrapper header {
+  background-color: #19456b;
+}
+div#wrapper header div#headContent {
+  position: relative;
+  height: 150px;
+  line-height: 150px;
+}
+div#wrapper header div#headContent img {
+  position: relative;
+  vertical-align: middle;
+  left: 50px;
+}
+div#wrapper header div#headContent nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+div#wrapper header div#headContent nav ul {
+  display: flex;
+  flex-direction: row;
+}
+div#wrapper header div#headContent nav ul li a {
+  padding: 5px 10px;
+  line-height: normal;
+  display: block;
+  color: #d9dab0;
+  font-weight: bolder;
+}
+div#wrapper header div#headContent nav ul li a:hover {
+  color: #ff8e71;
+}
+div#wrapper header div#headContent nav ul li a.selected {
+  color: #ff8e71;
+}
+div#wrapper main {
+  padding: 50px 0px;
+}
+div#wrapper main#daily {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+div#wrapper main#daily div#dailyLeft {
+  flex-grow: 1;
+}
+div#wrapper main#daily div#dailyLeft.Monday {
+  color: #583d72;
+}
+div#wrapper main#daily div#dailyLeft.Monday span {
+  background-color: #583d72;
+}
+div#wrapper main#daily div#dailyLeft.Tuesday {
+  color: #5eaaa8;
+}
+div#wrapper main#daily div#dailyLeft.Tuesday span {
+  background-color: #5eaaa8;
+}
+div#wrapper main#daily div#dailyLeft.Wednesday {
+  color: #9f5f80;
+}
+div#wrapper main#daily div#dailyLeft.Wednesday span {
+  background-color: #9f5f80;
+}
+div#wrapper main#daily div#dailyLeft.Thursday {
+  color: #83a95c;
+}
+div#wrapper main#daily div#dailyLeft.Thursday span {
+  background-color: #83a95c;
+}
+div#wrapper main#daily div#dailyLeft.Friday {
+  color: #a9294f;
+}
+div#wrapper main#daily div#dailyLeft.Friday span {
+  background-color: #a9294f;
+}
+div#wrapper main#daily div#dailyLeft.Saturday {
+  color: #db6400;
+}
+div#wrapper main#daily div#dailyLeft.Saturday span {
+  background-color: #db6400;
+}
+div#wrapper main#daily div#dailyLeft.Sunday {
+  color: #949cdf;
+}
+div#wrapper main#daily div#dailyLeft.Sunday span {
+  background-color: #949cdf;
+}
+div#wrapper main#daily div#dailyLeft p#title {
+  font-size: 24px;
+  padding: 10px;
+  font-weight: bold;
+}
+div#wrapper main#daily div#dailyLeft p#title span {
+  height: 10px;
+  width: 120px;
+  display: inline-block;
+  border-radius: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+div#wrapper main#daily div#dailyLeft div img {
+  width: 500px;
+}
+div#wrapper main#daily div#dailyLeft p#instruction {
+  padding: 10px;
+  text-indent: 10px;
+  width: 500px;
+  line-height: 25px;
+  font-weight: bold;
+}
+div#wrapper main#daily aside {
+  flex-basis: 260px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+div#wrapper main#daily aside div#dailyWrapper {
+  margin-top: 50px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  text-align: center;
+}
+div#wrapper main#daily aside div#dailyWrapper span {
+  background-color: white;
+  font-weight: bolder;
+  padding: 0px 5px;
+  position: relative;
+  top: -8px;
+}
+div#wrapper main#daily aside img {
+  height: 350px;
+}
+div#wrapper main#daily aside ul li a {
+  display: block;
+  padding: 5px;
+}
+div#wrapper main#daily aside ul li a.Monday {
+  color: #583d72;
+}
+div#wrapper main#daily aside ul li a.Tuesday {
+  color: #5eaaa8;
+}
+div#wrapper main#daily aside ul li a.Wednesday {
+  color: #9f5f80;
+}
+div#wrapper main#daily aside ul li a.Thursday {
+  color: #83a95c;
+}
+div#wrapper main#daily aside ul li a.Friday {
+  color: #a9294f;
+}
+div#wrapper main#daily aside ul li a.Saturday {
+  color: #db6400;
+}
+div#wrapper main#daily aside ul li a.Sunday {
+  color: #949cdf;
+}
+div#wrapper main#daily aside ul li a:hover {
+  background-color: #19456b;
+  color: #d9dab0;
+}
+div#wrapper main.temporary .content {
+  color: #d9dab0;
+  padding: 10px;
+  height: 325px;
+  background-color: #19456b;
+}
+div#wrapper main.temporary .mainWrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+div#wrapper main.temporary .mainWrapper .main-left {
+  padding: 20px;
+  color: #d9dab0;
+  background-color: #19456b;
+  flex-grow: 1;
+  height: 200px;
+}
+div#wrapper main.temporary .mainWrapper .main-right {
+  padding: 20px;
+  color: #d9dab0;
+  background-color: #19456b;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 400px;
+  height: 200px;
+}
+div#wrapper footer {
+  padding: 5px;
+  background-color: #19456b;
+}
+div#wrapper footer ul {
+  width: 640px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+div#wrapper footer ul li {
+  padding: 5px 10px;
+  color: #d9dab0;
+  font-weight: bolder;
+  flex-grow: 1;
+  text-align: center;
+}
+div#wrapper footer ul li a {
+  color: #d9dab0;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+div#wrapper footer ul li a:hover {
+  color: #ff8e71;
+}
+
+/*# sourceMappingURL=index.css.map */

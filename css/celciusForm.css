@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+form {
+  width: 500px;
+  margin: 30px auto;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+legend {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.cool {
+  color: blue;
+}
+
+.not-cool {
+  color: green;
+}
+
+.hot {
+  color: red;
+}

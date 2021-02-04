@@ -1,0 +1,209 @@
+$themeColor: #19456b;
+$navColor: #d9dab0;
+$navHoverColor: #ff8e71;
+$days: (
+  "Monday": #583d72,
+  "Tuesday": #5eaaa8,
+  "Wednesday": #9f5f80,
+  "Thursday": #83a95c,
+  "Friday": #a9294f,
+  "Saturday": #db6400,
+  "Sunday": #949cdf,
+);
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+a:link,
+a:visited,
+a {
+  color: black;
+  text-decoration: none;
+}
+%wrapperWidth {
+  width: 80%;
+  margin: 0px auto;
+}
+div#wrapper {
+  header {
+    background-color: $themeColor;
+
+    div#headContent {
+      @extend %wrapperWidth;
+      position: relative;
+      height: 150px;
+      line-height: 150px;
+
+      img {
+        position: relative;
+        vertical-align: middle;
+        left: 50px;
+      }
+      nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        ul {
+          display: flex;
+          flex-direction: row;
+          li {
+            a {
+              padding: 5px 10px;
+              line-height: normal;
+              display: block;
+              color: $navColor;
+              font-weight: bolder;
+              &:hover {
+                color: $navHoverColor;
+              }
+              &.selected {
+                color: $navHoverColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    @extend %wrapperWidth;
+    padding: 50px 0px;
+    &#daily {
+      width: 800px;
+      display: flex;
+      flex-direction: row;
+      div#dailyLeft {
+        @each $day, $color in $days {
+          &.#{$day} {
+            color: $color;
+            span {
+              background-color: $color;
+            }
+          }
+        }
+        flex-grow: 1;
+        p#title {
+          font-size: 24px;
+          padding: 10px;
+          font-weight: bold;
+          span {
+            height: 10px;
+            width: 120px;
+            display: inline-block;
+            border-radius: 20px;
+            margin-left: 10px;
+            vertical-align: middle;
+          }
+        }
+        div {
+          img {
+            width: 500px;
+          }
+        }
+        p#instruction {
+          padding: 10px;
+          text-indent: 10px;
+          width: 500px;
+          line-height: 25px;
+          font-weight: bold;
+        }
+      }
+      aside {
+        flex-basis: 260px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        div#dailyWrapper {
+          margin-top: 50px;
+          border: 1px solid #999999;
+          border-radius: 3px;
+          text-align: center;
+          span {
+            background-color: white;
+            font-weight: bolder;
+            padding: 0px 5px;
+            position: relative;
+            top: -8px;
+          }
+        }
+        img {
+          height: 350px;
+        }
+        ul li a {
+          display: block;
+          padding: 5px;
+
+          @each $day, $color in $days {
+            &.#{$day} {
+              color: $color;
+            }
+          }
+          &:hover {
+            background-color: $themeColor;
+            color: $navColor;
+          }
+        }
+      }
+    }
+    &.temporary {
+      .content {
+        color: $navColor;
+        padding: 10px;
+        height: 325px;
+        background-color: $themeColor;
+      }
+      .mainWrapper {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        .main-left {
+          padding: 20px;
+          color: $navColor;
+          background-color: $themeColor;
+          flex-grow: 1;
+          height: 200px;
+        }
+        .main-right {
+          padding: 20px;
+          color: $navColor;
+          background-color: $themeColor;
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: 400px;
+          height: 200px;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 5px;
+    @extend %wrapperWidth;
+    background-color: $themeColor;
+    ul {
+      width: 640px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      li {
+        padding: 5px 10px;
+        color: $navColor;
+        font-weight: bolder;
+        flex-grow: 1;
+        text-align: center;
+        a {
+          color: $navColor;
+          font-weight: bolder;
+          text-decoration: underline;
+          &:hover {
+            color: $navHoverColor;
+          }
+        }
+      }
+    }
+  }
+}
