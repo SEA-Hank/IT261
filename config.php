@@ -33,5 +33,14 @@ $exercises = array(
         "form2.php" => "./weeks/week4/form2.php",
         "celcius-form.php" => "./weeks/week4/celcius-form.php",
         "login-basic.php" => "./weeks/week4/login-basic.php",
+    ),
+    "WEEK 5" => array(
+        "login2.php" => "./weeks/week5/login2.php",
+        "currency.php" => "./weeks/week5/currency.php",
+        "currency1a.php" => "./weeks/week5/currency1a.php",
+        "currency2.php" => "./weeks/week5/currency2.php",
+        "currency3.php" => "./weeks/week5/currency3.php",
+        "currency4.php" => "./weeks/week5/currency4.php",
+        "extra-credit.php" => "./weeks/week5/extra-credit.php",
     )
 );
