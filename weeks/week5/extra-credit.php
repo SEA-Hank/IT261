@@ -207,8 +207,8 @@
             </div>
     <?php }
     } ?>
-    <p class="valid"><a href="http://validator.w3.org/check/referer" target="_blank"><i>HTML VALID</i></a></p>
-    <p class="valid"><a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank"><i>CSS VALID</i></a></p>
+    <p class="valid"><a href="http://validator.w3.org/check?uri=referer" target="_blank"><i>HTML VALID</i></a></p>
+    <p class="valid"><a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank"><i>CSS VALID</i></a></p>
 </body>
 
 </html>
