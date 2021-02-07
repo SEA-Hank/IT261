@@ -100,6 +100,12 @@
             font-size: 30px;
             font-weight: bolder;
         }
+
+        nav {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
     </style>
     <script>
 
@@ -107,6 +113,14 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="./calculator.php">calculator.php</a></li>
+            <li><a href="./calculator-days.php">calculator-days.php</a></li>
+            <li><a href="./calculator-days-errors.php">calculator-days-errors.php</a></li>
+            <li><a href="./calculator-days-errors-sticky.php">calculator-days-errors-sticky.php</a></li>
+        </ul>
+    </nav>
     <h1>Our Trip Calculator</h1>
     <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
         <fieldset>
