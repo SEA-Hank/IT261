@@ -1,6 +1,6 @@
 <?php include "../../formTools.php" ?>
 <?php
-$isStick = false;
+$isStick = true;
 $showError = $_SERVER["REQUEST_METHOD"] === 'POST';
 $form_config = array(
     "firstName" => array(
