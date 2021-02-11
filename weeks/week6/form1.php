@@ -91,9 +91,7 @@ $form_status = checkFieldsStatus($form_config);
     </form>
     <?php
     if ($form_status["isReady"]) {
-        echo "isReady";
         $toEmail = "horicky7@gmail.com";
-
 
         $subject = "Test email for my form 1, " . date('m/d/y');
         $firstName = $form_status['firstName'];
