@@ -106,10 +106,9 @@ $form_status = checkFieldsStatus($form_config);
         $body .= "Your gender is: $gender" . PHP_EOL;
         $body .= "Your coments is: $comments" . PHP_EOL;
         $body .= "Favorite Region: $region" . PHP_EOL;
-        try {
-            mail($toEmail, $subject, $body);
-        } catch (exception $e) {
-        }
+
+        mail($toEmail, $subject, $body);
+
         header('Location:thx.php');
     }
     ?>
