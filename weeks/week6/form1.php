@@ -109,7 +109,7 @@ $form_status = checkFieldsStatus($form_config);
         $body .= "Your coments is: $comments" . PHP_EOL;
         $body .= "Favorite Region: $region" . PHP_EOL;
         try {
-            mail($toEmail, $subject, $body);
+            //mail($toEmail, $subject, $body);
         } catch (exception $e) {
         } finally {
             header('Location:thx.php');
