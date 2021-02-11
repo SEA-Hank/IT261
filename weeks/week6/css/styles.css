@@ -36,3 +36,8 @@ input[type="checkbox"] {
   color: red;
   font-style: italic;
 }
+
+h2 {
+  text-align: center;
+  padding: 20px 0px 5px 0px;
+}

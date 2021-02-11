@@ -103,6 +103,7 @@ if ($form_status["isReady"]) {
 </head>
 
 <body>
+    <h2>Sticky Form</h2>
     <form action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
         <fieldset>
             <?php
