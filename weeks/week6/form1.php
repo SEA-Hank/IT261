@@ -93,26 +93,27 @@ $form_status = checkFieldsStatus($form_config);
     if ($form_status["isReady"]) {
         echo "isReady";
         $toEmail = "horicky7@gmail.com";
-        header('Location:index.php');
 
-        // $subject = "Test email for my form 1, " . date('m/d/y');
-        // $firstName = $form_status['firstName'];
-        // $lastName = $form_status['lastName'];
-        // $customerEmail = $form_status['email'];
-        // $gender = $form_status['gender'];
-        // $comments = $form_status['comments'];
-        // $region = $form_status['region'];
 
-        // $body = "Hello, $firstName $lastName" . PHP_EOL;
-        // $body .= "Your email is: $customerEmail" . PHP_EOL;
-        // $body .= "Your gender is: $gender" . PHP_EOL;
-        // $body .= "Your coments is: $comments" . PHP_EOL;
-        // $body .= "Favorite Region: $region" . PHP_EOL;
-        // try {
-        //     //mail($toEmail, $subject, $body);
-        // } catch (exception $e) {
-        // }
+        $subject = "Test email for my form 1, " . date('m/d/y');
+        $firstName = $form_status['firstName'];
+        $lastName = $form_status['lastName'];
+        $customerEmail = $form_status['email'];
+        $gender = $form_status['gender'];
+        $comments = $form_status['comments'];
+        $region = $form_status['region'];
 
+        $body = "Hello, $firstName $lastName" . PHP_EOL;
+        $body .= "Your email is: $customerEmail" . PHP_EOL;
+        $body .= "Your gender is: $gender" . PHP_EOL;
+        $body .= "Your coments is: $comments" . PHP_EOL;
+        $body .= "Favorite Region: $region" . PHP_EOL;
+        try {
+            mail($toEmail, $subject, $body);
+        } catch (exception $e) {
+        } finally {
+            header('Location:thx.php');
+        }
     }
     ?>
 </body>
