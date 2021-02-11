@@ -109,9 +109,8 @@ $form_status = checkFieldsStatus($form_config);
         try {
             mail($toEmail, $subject, $body);
         } catch (exception $e) {
-        } finally {
-            header('Location:thx.php');
         }
+        header('Location:thx.php');
     }
     ?>
 </body>
