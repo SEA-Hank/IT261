@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 580px;
+  margin: 20px auto;
+}
+
+fieldset {
+  padding: 10px;
+}
+label {
+  display: block;
+  padding: 10px 0px;
+}
+
+li {
+  list-style: none;
+}
+
+#submit-btn {
+  margin: 10px 0px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.error-msg {
+  display: block;
+  color: red;
+  font-style: italic;
+}
