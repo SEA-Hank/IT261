@@ -109,6 +109,7 @@ $form_status = checkFieldsStatus($form_config);
 
         mail($toEmail, $subject, $body);
 
+        header("Content-type: text/html; charset=utf-8");
         header('Location:thx.php');
     }
     ?>
