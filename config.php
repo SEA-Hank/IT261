@@ -47,6 +47,7 @@ $exercises = array(
         "form1.php" => "./weeks/week6/form1.php",
         "form2.php" => "./weeks/week6/form2.php",
         "form3.php" => "./weeks/week6/form3.php",
+        "form4.php" => "./weeks/week6/form4.php",
         "implode.php" => "./weeks/week6/implode.php",
         "functions.php" => "./weeks/week6/functions.php",
         "index.php" => "./weeks/week6/home.php",
