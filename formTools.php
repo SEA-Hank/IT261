@@ -10,16 +10,36 @@ function checkNumeric($value, $config)
     }
     return false;
 }
+
+function isEmpty($key, $val)
+{
+    return !empty($val);
+}
+
+function isPhoneNumber($key, $val)
+{
+    return preg_match("/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/", $val);
+}
+
 function checkFieldsStatus($form_config)
 {
     $form_status = array("errorMsg" => array(), "isReady" => true);
     foreach ($form_config as $key => $config) {
-        $formVar = getparameters($key);
-        if (empty($formVar) ||  checkNumeric($formVar, $config)) {
-            $form_status["errorMsg"][$key] = $config["msg"];
-            $form_status["isReady"] = false;
+        $formVal = getparameters($key);
+        $validateFN = null;
+        if (is_array($config["msg"])) {
+            $validateFN = $config["msg"];
+        } else {
+            $validateFN = array("isEmpty" => $config["msg"]);
         }
-        $form_status[$key] = $formVar;
+        foreach ($validateFN as $fnName => $errorMessage) {
+            if (!$fnName($key, $formVal)) {
+                $form_status["isReady"] = false;
+                $form_status["errorMsg"][$key] = $errorMessage;
+                break;
+            }
+        }
+        $form_status[$key] = $formVal;
     }
     return $form_status;
 }
@@ -29,9 +49,10 @@ function generateInputFiled($field, $form_status, $config)
 {
     global $isStick;
     $htmlType = $config["htmlType"];
+    $placeholder = array_key_exists("placeholder", $config) ? $config["placeholder"] : "";
     $value = $form_status[$field];
 ?>
-    <input type="<?= $htmlType ?>" name="<?= $field ?>" id="<?= $field ?>" value="<?= $isStick ? $value : "" ?>">
+    <input type="<?= $htmlType ?>" name="<?= $field ?>" id="<?= $field ?>" placeholder="<?= $placeholder ?>" value="<?= $isStick ? $value : "" ?>">
 <?php
 }
 
