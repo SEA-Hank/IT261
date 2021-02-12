@@ -42,5 +42,13 @@ $exercises = array(
         "currency3.php" => "./weeks/week5/currency3.php",
         "currency4.php" => "./weeks/week5/currency4.php",
         "extra-credit.php" => "./weeks/week5/extra-credit.php",
+    ),
+    "WEEK 6" => array(
+        "form1.php" => "./weeks/week6/form1.php",
+        "form2.php" => "./weeks/week6/form2.php",
+        "form3.php" => "./weeks/week6/form3.php",
+        "implode.php" => "./weeks/week6/implode.php",
+        "functions.php" => "./weeks/week6/functions.php",
+        "index.php" => "./weeks/week6/home.php",
     )
 );
