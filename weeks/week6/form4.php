@@ -95,12 +95,15 @@ if ($form_status["isReady"]) {
     $body .= "Favorite Region: $region" . PHP_EOL;
     $body .= "Favorite Wines: $wines" . PHP_EOL;
 
-    $header = array(
-        "From" => "no-reply@seahank.com",
-        "Reply-to" => $customerEmail
-    );
 
-    mail($toEmail, $subject, $body, $header);
+    $emailHeader = 'From: <no-reply@seahank.com>' . "\r\n";
+    $emailHeader .= "Reply-To: $customerEmail" . "\r\n";
+    // $emailHeader = array(
+    //     "From" => "<no-reply@seahank.com>",
+    //     "Reply-To" => $customerEmail
+    // );
+
+    mail($toEmail, $subject, $body, $emailHeader);
 
     header("Content-type: text/html; charset=utf-8");
     header('Location:thx.php');
