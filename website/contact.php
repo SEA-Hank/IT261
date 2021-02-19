@@ -1,18 +1,22 @@
 <?php include "./includes/config.php" ?>
 <?php include './includes/header.php' ?>
-<main class="temporary">
+<main id="contact">
 
-    <div class="content">
-        <h1>This is
-            <?= $pageTitle ?>
-        </h1>
-    </div>
+    <!-- <div class="content">
+
+    </div> -->
     <div class="mainWrapper">
-        <main class="main-left">
-            <h3>Main Section</h3>
-        </main>
+        <div class="main-left">
+            <h1>
+                Please fill out the form
+            </h1>
+            <?php include "./includes/form.php" ?>
+        </div>
         <aside class="main-right">
-            <h3>Aside Section</h3>
+            <h1>
+                The Popular PHP Framework
+            </h1>
+            <img src="<?= randImages('php') ?>" alt="">
         </aside>
     </div>
 </main>

@@ -184,6 +184,66 @@ div#wrapper {
         }
       }
     }
+    &#contact {
+      padding: 0px 0px;
+      .mainWrapper {
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        margin: 0px auto;
+        h1 {
+          padding: 5px 0px;
+          color: $themeColor;
+          font-size: 22px;
+        }
+        .main-left {
+          flex-grow: 1;
+          padding: 20px;
+          form {
+            fieldset {
+              padding: 10px;
+              label {
+                display: block;
+                padding: 10px 0px;
+              }
+              li {
+                padding: 5px 0px;
+                input {
+                  margin-right: 5px;
+                }
+              }
+              .error-msg {
+                display: block;
+                color: red;
+                font-style: italic;
+              }
+              p.p-buttons {
+                margin-top: 10px;
+                input[type="submit"],
+                input[type="button"] {
+                  padding: 5px 10px;
+                  cursor: pointer;
+                  outline: none;
+                }
+                input[type="button"] {
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
+        }
+        .main-right {
+          padding: 20px;
+          color: $themeColor;
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: 400px;
+          img {
+            width: 400px;
+          }
+        }
+      }
+    }
     &.temporary {
       .content {
         color: $navColor;

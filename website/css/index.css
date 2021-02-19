@@ -213,6 +213,64 @@ div#wrapper main#home .mainWrapper .main-right p {
   padding: 10px 0px;
   text-indent: 15px;
 }
+div#wrapper main#contact {
+  padding: 0px 0px;
+}
+div#wrapper main#contact .mainWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  margin: 0px auto;
+}
+div#wrapper main#contact .mainWrapper h1 {
+  padding: 5px 0px;
+  color: #19456b;
+  font-size: 22px;
+}
+div#wrapper main#contact .mainWrapper .main-left {
+  flex-grow: 1;
+  padding: 20px;
+}
+div#wrapper main#contact .mainWrapper .main-left form fieldset {
+  padding: 10px;
+}
+div#wrapper main#contact .mainWrapper .main-left form fieldset label {
+  display: block;
+  padding: 10px 0px;
+}
+div#wrapper main#contact .mainWrapper .main-left form fieldset li {
+  padding: 5px 0px;
+}
+div#wrapper main#contact .mainWrapper .main-left form fieldset li input {
+  margin-right: 5px;
+}
+div#wrapper main#contact .mainWrapper .main-left form fieldset .error-msg {
+  display: block;
+  color: red;
+  font-style: italic;
+}
+div#wrapper main#contact .mainWrapper .main-left form fieldset p.p-buttons {
+  margin-top: 10px;
+}
+div#wrapper main#contact .mainWrapper .main-left form fieldset p.p-buttons input[type=submit],
+div#wrapper main#contact .mainWrapper .main-left form fieldset p.p-buttons input[type=button] {
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+}
+div#wrapper main#contact .mainWrapper .main-left form fieldset p.p-buttons input[type=button] {
+  margin-left: 5px;
+}
+div#wrapper main#contact .mainWrapper .main-right {
+  padding: 20px;
+  color: #19456b;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 400px;
+}
+div#wrapper main#contact .mainWrapper .main-right img {
+  width: 400px;
+}
 div#wrapper main.temporary .content {
   color: #d9dab0;
   padding: 10px;
