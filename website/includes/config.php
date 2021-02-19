@@ -30,3 +30,9 @@ switch (THIS_PAGE) {
         $pageTitle = "Gallery page of our Website Project";
         break;
 }
+
+function randImages($folder, $min = 1, $max = 5)
+{
+    $index = rand($min, $max);
+    return "./images/$folder/pic_$index.jpg";
+}
