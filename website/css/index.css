@@ -271,6 +271,9 @@ div#wrapper main#contact .mainWrapper .main-right {
 div#wrapper main#contact .mainWrapper .main-right img {
   width: 400px;
 }
+div#wrapper main#thanks .content pre {
+  line-height: 30px;
+}
 div#wrapper main.temporary .content {
   color: #d9dab0;
   padding: 10px;

@@ -244,6 +244,13 @@ div#wrapper {
         }
       }
     }
+    &#thanks {
+      .content {
+        pre {
+          line-height: 30px;
+        }
+      }
+    }
     &.temporary {
       .content {
         color: $navColor;

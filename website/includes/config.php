@@ -29,10 +29,37 @@ switch (THIS_PAGE) {
     case "gallery.php":
         $pageTitle = "Gallery page of our Website Project";
         break;
+    case "thanks.php":
+        $pageTitle = "thanks page of our Website Project";
+        break;
+    default:
+        $pageTitle = "Hank's Website Project";
+        break;
 }
 
 function randImages($folder, $min = 1, $max = 5)
 {
     $index = rand($min, $max);
     return "./images/$folder/pic_$index.jpg";
+}
+
+function getEmailContent()
+{
+    $firstName = $_SESSION['firstName'];
+    $lastName = $_SESSION['lastName'];
+    $customerEmail = $_SESSION['email'];
+    $phone = $_SESSION['phone'];
+    $gender = $_SESSION['gender'];
+    $comments = $_SESSION['comments'];
+    $frameworks = implode(", ", $_SESSION['frameworks']);
+    $position = $_SESSION['position'];
+
+    $body = "First and Last Name:  $firstName $lastName" . PHP_EOL;
+    $body .= "Email is: $customerEmail" . PHP_EOL;
+    $body .= "Phone Number is: $phone" . PHP_EOL;
+    $body .= "Gender is: $gender" . PHP_EOL;
+    $body .= "Coments is: $comments" . PHP_EOL;
+    $body .= "Favorite Position: $position" . PHP_EOL;
+    $body .= "Favorite frameworks: $frameworks" . PHP_EOL;
+    return $body;
 }

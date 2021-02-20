@@ -7,11 +7,13 @@ $form_config = array(
         "display" => "First Name",
         "msg" => "Please enter your first name",
         "htmlType" => "text",
+        "placeholder" => "first name"
     ),
     "lastName" => array(
         "display" => "Last Name",
         "msg" => "Please enter your last name",
-        "htmlType" => "text"
+        "htmlType" => "text",
+        "placeholder" => "last name"
     ),
     "phone" => array(
         "display" => "Phone Number",
@@ -24,7 +26,8 @@ $form_config = array(
     ),
     "email" => array(
         "msg" => "Please enter your email",
-        "htmlType" => "text"
+        "htmlType" => "text",
+        "placeholder" => "email"
     ),
     "gender" => array(
         "msg" => "Please check one gender",
@@ -36,8 +39,8 @@ $form_config = array(
         )
     ),
     "frameworks" => array(
-        "display" => "PHP Frameworks that you're interested in",
-        "msg" => "Which PHP frameworks would are you interested in?",
+        "display" => "Which PHP frameworks are you interested in?",
+        "msg" => "Please select at least one",
         "htmlType" => "checkbox",
         "options" => array(
             "Laravel" => "Laravel",
@@ -53,9 +56,9 @@ $form_config = array(
         "htmlType" => "select",
         "options" => array(
             "Select One" => "",
-            "Junior developer" => "Junior",
-            "Middle developer" => "Middle",
-            "Senior developer" => "Senior"
+            "Junior developer" => "Junior developer",
+            "Middle developer" => "Middle developer",
+            "Senior developer" => "Senior developer"
         )
     ),
     "comments" => array(
@@ -73,28 +76,17 @@ $form_config = array(
 );
 $form_status = checkFieldsStatus($form_config);
 
-if (false && $form_status["isReady"]) {
+if ($form_status["isReady"]) {
+    session_start();
+    date_default_timezone_set('America/Los_Angeles');
+    foreach ($form_config as $key => $value) {
+        $_SESSION[$key] = $form_status[$key];
+    }
 
     $toEmail = "horicky7@gmail.com";
+    $subject = "Thank for filling out the form " . date('m/d/y');
 
-    $subject = "Test email for my form " . date('m/d/y');
-    $firstName = $form_status['firstName'];
-    $lastName = $form_status['lastName'];
-    $customerEmail = $form_status['email'];
-    $gender = $form_status['gender'];
-    $comments = $form_status['comments'];
-    $region = $form_status['region'];
-    $wines = implode(", ", $form_status['wines']);
-    $phone = $form_status['phone'];
-
-    $body = "First and Last Name:  $firstName $lastName" . PHP_EOL;
-    $body .= "Email is: $customerEmail" . PHP_EOL;
-    $body .= "Phone Number is: $phone" . PHP_EOL;
-    $body .= "Gender is: $gender" . PHP_EOL;
-    $body .= "Coments is: $comments" . PHP_EOL;
-    $body .= "Favorite Region: $region" . PHP_EOL;
-    $body .= "Favorite Wines: $wines" . PHP_EOL;
-
+    $body = getEmailContent();
 
     $emailHeader = 'From: <no-reply@seahank.com>' . "\r\n";
     $emailHeader .= "Reply-To: $customerEmail" . "\r\n";
@@ -103,10 +95,10 @@ if (false && $form_status["isReady"]) {
     //     "Reply-To" => $customerEmail
     // );
 
-    mail($toEmail, $subject, $body, $emailHeader);
+    //mail($toEmail, $subject, $body, $emailHeader);
 
     header("Content-type: text/html; charset=utf-8");
-    header('Location:thx.php');
+    header('Location:thanks.php');
     exit;
 }
 ?>
