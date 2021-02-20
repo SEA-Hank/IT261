@@ -84,6 +84,7 @@ if ($form_status["isReady"]) {
     }
 
     $toEmail = "horicky7@gmail.com";
+    $toTeacherEmail = "oszemeo@mystudentswa.com";
     $subject = "Thank for filling out the form " . date('m/d/y');
 
     $body = getEmailContent();
@@ -95,7 +96,7 @@ if ($form_status["isReady"]) {
     //     "Reply-To" => $customerEmail
     // );
 
-    mail($toEmail, $subject, $body, $emailHeader);
+    mail($toTeacherEmail, $subject, $body, $emailHeader);
     redirect("thanks.php");
 }
 
