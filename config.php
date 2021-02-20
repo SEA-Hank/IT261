@@ -6,7 +6,7 @@ $nav = array(
     "Switch-3" => "./website/daily.php",
     "Troubleshoot-4" => "./adder.php",
     "Calculator" => "./calculator/calculator.php",
-    "Email" => "",
+    "Email" => "./website/contact.php",
     "Gallery" => "",
     "Database" => ""
 );
@@ -51,5 +51,9 @@ $exercises = array(
         "implode.php" => "./weeks/week6/implode.php",
         "functions.php" => "./weeks/week6/functions.php",
         "index.php" => "./weeks/week6/home.php",
+    ),
+    "WEEK 7" => array(
+        "random.php" => "./weeks/week7/random.php",
+        "substr.php" => "./weeks/week7/substr.php",
     )
 );
