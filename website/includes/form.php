@@ -95,21 +95,26 @@ if ($form_status["isReady"]) {
     //     "Reply-To" => $customerEmail
     // );
 
-    //mail($toEmail, $subject, $body, $emailHeader);
-
-    header("Content-type: text/html; charset=utf-8");
-    header('Location:thanks.php');
-    exit;
+    mail($toEmail, $subject, $body, $emailHeader);
+    redirect("thanks.php");
 }
+
+
+function builtForm()
+{
+    global $form_config;
+    global $form_status;
 ?>
-<form action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
-    <fieldset>
-        <?php
-        generateFormFileds($form_config, $form_status);
-        ?>
-        <p class="p-buttons">
-            <input type="submit" value="Send it">
-            <input type="button" onclick="javascript:window.location.href='<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>'" value="Reset">
-        </p>
-    </fieldset>
-</form>
+    <form action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
+        <fieldset>
+            <?php
+            generateFormFileds($form_config, $form_status);
+            ?>
+            <p class="p-buttons">
+                <input type="submit" value="Send it">
+                <input type="button" onclick="javascript:window.location.href='<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>'" value="Reset">
+            </p>
+        </fieldset>
+    </form>
+<?php
+} ?>

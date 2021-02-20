@@ -43,8 +43,18 @@ function randImages($folder, $min = 1, $max = 5)
     return "./images/$folder/pic_$index.jpg";
 }
 
+function redirect($url)
+{
+    header("Content-type: text/html; charset=utf-8");
+    header("Location:$url");
+    exit();
+}
+
 function getEmailContent()
 {
+    if (!array_key_exists('firstName', $_SESSION)) {
+        redirect('contact.php');
+    }
     $firstName = $_SESSION['firstName'];
     $lastName = $_SESSION['lastName'];
     $customerEmail = $_SESSION['email'];
