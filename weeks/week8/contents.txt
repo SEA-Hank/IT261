@@ -1,0 +1,12 @@
+content file
+
+our contents:
+config.php
+credentials.php
+people.php
+people-view.php
+
+
+
+website
+credentials.php
