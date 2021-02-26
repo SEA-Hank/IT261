@@ -274,6 +274,30 @@ div#wrapper main#contact .mainWrapper .main-right img {
 div#wrapper main#thanks .content pre {
   line-height: 30px;
 }
+div#wrapper main#gallery table {
+  width: 1250px;
+  margin: 0px auto;
+  border-collapse: collapse;
+}
+div#wrapper main#gallery table img {
+  width: 300px;
+}
+div#wrapper main#gallery table tr.gallery-tr {
+  background-color: #a7c5eb;
+}
+div#wrapper main#gallery table tr.gallery-tr-2 {
+  background-color: #eae3c8;
+}
+div#wrapper main#gallery table td {
+  padding: 5px;
+}
+div#wrapper main#gallery table td.gallery-name {
+  text-align: center;
+}
+div#wrapper main#gallery table td.gallery-description {
+  width: 500px;
+  text-indent: 20px;
+}
 div#wrapper main.temporary .content {
   color: #d9dab0;
   padding: 10px;

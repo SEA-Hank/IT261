@@ -1,4 +1,5 @@
 <?php
+include 'databaseTools.php';
 define("THIS_PAGE", basename($_SERVER["PHP_SELF"]));
 
 $nav = array(

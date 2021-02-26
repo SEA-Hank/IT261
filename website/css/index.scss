@@ -251,6 +251,33 @@ div#wrapper {
         }
       }
     }
+    &#gallery {
+      table {
+        width: 1250px;
+        margin: 0px auto;
+        img {
+          width: 300px;
+        }
+        border-collapse: collapse;
+        tr.gallery-tr {
+          background-color: #a7c5eb;
+        }
+        tr.gallery-tr-2 {
+          background-color: #eae3c8;
+        }
+        td {
+          padding: 5px;
+          //text-align: center;
+        }
+        td.gallery-name {
+          text-align: center;
+        }
+        td.gallery-description {
+          width: 500px;
+          text-indent: 20px;
+        }
+      }
+    }
     &.temporary {
       .content {
         color: $navColor;

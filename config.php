@@ -55,5 +55,9 @@ $exercises = array(
     "WEEK 7" => array(
         "random.php" => "./weeks/week7/random.php",
         "substr.php" => "./weeks/week7/substr.php",
+    ),
+    "WEEK 8" => array(
+        "people.php" => "./weeks/week8/people.php",
+        "people-view.php" => "./weeks/week8/people-view.php",
     )
 );
