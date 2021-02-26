@@ -7,7 +7,7 @@ $nav = array(
     "Troubleshoot-4" => "./adder.php",
     "Calculator" => "./calculator/calculator.php",
     "Email" => "./website/contact.php",
-    "Gallery" => "",
+    "Gallery" => "./website/gallery.php",
     "Database" => ""
 );
 
