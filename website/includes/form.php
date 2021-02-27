@@ -96,7 +96,7 @@ if ($form_status["isReady"]) {
     //     "Reply-To" => $customerEmail
     // );
 
-    mail($toTeacherEmail, $subject, $body, $emailHeader);
+    mail($toEmail, $subject, $body, $emailHeader);
     redirect("thanks.php");
 }
 
