@@ -66,7 +66,7 @@ if (isset($_POST["reg_user"])) {
 
     $UserName = $form_status["UserName"];
     $Email = $form_status["Email"];
-    $user_check_query = "select * from users where username= '$UserName'or email='$Email' LIMIT 1 ";
+    $user_check_query = "select * from Users where username= '$UserName'or email='$Email' LIMIT 1 ";
 
     $result = mysqli_query($link, $user_check_query)  or
         die(myError(__FILE__, __LINE__, mysqli_error($link)));
@@ -86,7 +86,7 @@ if (isset($_POST["reg_user"])) {
         $firstName = $form_status["firstName"];
         $lastName = $form_status["lastName"];
 
-        $insertSQL = "insert into users(firstname,lastname,username,email,password) 
+        $insertSQL = "insert into Users(firstname,lastname,username,email,password) 
                                         value('$firstName','$lastName','$UserName','$Email','$password')";
 
         mysqli_query($link, $insertSQL)  or
@@ -117,7 +117,7 @@ if (isset($_POST["login_user"]) && count($form_status["errorMsg"]) == 0) {
 
     $password = md5($form_status["password"]);
     $UserName = $form_status["UserName"];
-    $sql = "select * from users where password='$password' and username='$UserName'";
+    $sql = "select * from Users where password='$password' and username='$UserName'";
 
     $result = mysqli_query($link, $sql)  or
         die(myError(__FILE__, __LINE__, mysqli_error($link)));

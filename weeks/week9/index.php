@@ -23,8 +23,8 @@ if (isset($_GET["logout"])) {
 </head>
 
 <body>
-    <h1><?= $_SESSION["success"] ?></h1>
-    <p>Hello, <?= $_SESSION["UserName"] ?></p>
+    <h1><?= htmlentities($_SESSION["success"])  ?></h1>
+    <p>Hello,<?= htmlentities($_SESSION["UserName"])   ?></p>
     <p><a href="index.php?logout=1">logout</a></p>
     <h1>Welcome to our home page!</h1>
 </body>
