@@ -21,6 +21,11 @@ function isPhoneNumber($key, $val)
     return preg_match("/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/", $val);
 }
 
+function isPasswordMatch($key, $val)
+{
+    return $val == getparameters("password");
+}
+
 function checkFieldsStatus($form_config)
 {
     $form_status = array("errorMsg" => array(), "isReady" => true);
@@ -42,6 +47,16 @@ function checkFieldsStatus($form_config)
         $form_status[$key] = $formVal;
     }
     return $form_status;
+}
+
+function ConvertToSQLString($conn, $form_status)
+{
+    foreach ($form_status as $key => $value) {
+        if ($key == "isReady" || $key == "errorMsg") {
+            continue;
+        }
+        $form_status[$key] = mysqli_real_escape_string($conn, $value);
+    }
 }
 
 
@@ -118,6 +133,7 @@ function generateFormFileds($form_config, $form_status)
         switch ($config["htmlType"]) {
             case "text":
             case "email":
+            case "password":
                 generateInputFiled($field, $form_status, $config);
                 break;
             case "select":
