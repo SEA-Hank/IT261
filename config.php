@@ -59,5 +59,10 @@ $exercises = array(
     "WEEK 8" => array(
         "people.php" => "./weeks/week8/people.php",
         "people-view.php" => "./weeks/week8/people-view.php",
+    ),
+    "WEEK 9" => array(
+        "index.php" => "./weeks/week9/index.php",
+        "login.php" => "./weeks/week9/login.php",
+        "register.php" => "./weeks/week9/register.php"
     )
 );
