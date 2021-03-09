@@ -6,7 +6,7 @@ $nav = array(
     "index.php" => "Home",
     "about.php" => "about",
     "daily.php" => "Daily",
-    "people.php" => "People",
+    "keyboards.php" => "Keyboards",
     "contact.php" => "Contact",
     "gallery.php" => "Gallery",
 );
@@ -21,8 +21,8 @@ switch (THIS_PAGE) {
     case "daily.php":
         $pageTitle = "Daily page of our Website Project";
         break;
-    case "people.php":
-        $pageTitle = "People page of our Website Project";
+    case "keyboards.php":
+        $pageTitle = "keyboards page of our Website Project";
         break;
     case "contact.php":
         $pageTitle = "Contact page of our Website Project";

@@ -298,6 +298,76 @@ div#wrapper main#gallery table td.gallery-description {
   width: 500px;
   text-indent: 20px;
 }
+div#wrapper main#keyborads .content ul li {
+  padding: 10px;
+  border: 1px solid #19456b;
+  border-radius: 3px;
+  width: 320px;
+  height: 300px;
+  float: left;
+  margin: 10px;
+}
+div#wrapper main#keyborads .content ul li img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+div#wrapper main#keyborads .content ul li p.keyboard-name {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+div#wrapper main#keyborads .content ul li p.keyboard-name a {
+  text-decoration: underline;
+}
+div#wrapper main#keyborads .content ul li p.keyboard-name a:hover {
+  color: #ff8e71;
+}
+div#wrapper main#keyborads .content ul li:hover {
+  border: 1px solid #ff8e71;
+  box-shadow: 0px 0px 5px #ff8e71;
+}
+div#wrapper main#keyborads .content ul::after {
+  clear: both;
+  display: block;
+  content: " ";
+  height: 0px;
+  width: 0px;
+}
+div#wrapper main#keyborad-view div.content div {
+  float: left;
+  padding: 10px;
+}
+div#wrapper main#keyborad-view div.content div#kb-view-left img {
+  width: 450px;
+  height: 280px;
+  object-fit: cover;
+}
+div#wrapper main#keyborad-view div.content div#kb-view-right p {
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 5px 0px;
+}
+div#wrapper main#keyborad-view div.content div#kb-view-right table {
+  border-collapse: collapse;
+}
+div#wrapper main#keyborad-view div.content div#kb-view-right table td {
+  border: 1px solid #999999;
+  padding: 5px 10px;
+}
+div#wrapper main#keyborad-view div.content div#kb-view-right table td.td-label {
+  background-color: #eee;
+  font-weight: bolder;
+}
+div#wrapper main#keyborad-view div.content::after {
+  clear: both;
+  display: block;
+  content: " ";
+  height: 0px;
+  width: 0px;
+}
 div#wrapper main.temporary .content {
   color: #d9dab0;
   padding: 10px;
