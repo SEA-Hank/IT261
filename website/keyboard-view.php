@@ -1,6 +1,5 @@
-<?php include "./includes/config.php" ?>
-
 <?php
+include "./includes/config.php";
 $id =  isset($_GET["id"]) ? $_GET["id"] : "";
 if (empty($id)) {
     redirect('keyboards.php');
