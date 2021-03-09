@@ -368,6 +368,14 @@ div#wrapper main#keyborad-view div.content::after {
   height: 0px;
   width: 0px;
 }
+div#wrapper main#about {
+  text-align: center;
+}
+div#wrapper main#about p {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bolder;
+}
 div#wrapper main.temporary .content {
   color: #d9dab0;
   padding: 10px;

@@ -362,6 +362,14 @@ div#wrapper {
         }
       }
     }
+    &#about {
+      text-align: center;
+      p {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bolder;
+      }
+    }
     &.temporary {
       .content {
         color: $navColor;

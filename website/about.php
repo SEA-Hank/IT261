@@ -1,19 +1,11 @@
 <?php include "./includes/config.php" ?>
 <?php include './includes/header.php' ?>
-<main class="temporary">
-
+<main id="about">
     <div class="content">
-        <h1>This is
-            <?= $pageTitle ?>
-        </h1>
-    </div>
-    <div class="mainWrapper">
-        <main class="main-left">
-            <h3>Main Section</h3>
-        </main>
-        <aside class="main-right">
-            <h3>Aside Section</h3>
-        </aside>
+        <p>table structure</p>
+        <img src="./images/about/table_structure.jpg" alt="table structure">
+        <p>table datas</p>
+        <img src="./images/about/table_data.jpg" alt="table structure">
     </div>
 </main>
 <?php include './includes/footer.php' ?>
