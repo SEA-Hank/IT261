@@ -1,0 +1,128 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+$themeColor: #3a5a78;
+$menuBorderColor: #294056;
+$menuHoBgColor: #324d67;
+$menuHoColor: #b6d3e9;
+$wrapperWidth: 1000px;
+
+body {
+  background-color: #f7f7f7;
+  header {
+    div#login-wrapper {
+      width: $wrapperWidth;
+      margin: 0px auto;
+      color: $themeColor;
+      padding: 20px 0px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      span#span-label {
+        float: right;
+        font-size: 25px;
+        font-family: monospace;
+        font-weight: 900;
+      }
+      span#span-logout {
+        text-decoration: underline;
+        margin-left: 15px;
+        a {
+          padding: 2px 5px;
+          border-radius: 3px;
+        }
+        a,
+        a:link,
+        a:visited {
+          color: #c15050;
+        }
+        a:hover {
+          background: #c15050;
+          color: white;
+        }
+      }
+    }
+    div#menu-wrapper {
+      height: 60px;
+      background-color: $themeColor;
+      nav {
+        height: inherit;
+        width: $wrapperWidth;
+        margin: 0px auto;
+        ul {
+          height: inherit;
+          li {
+            a {
+              text-decoration: none;
+              display: block;
+              height: 100%;
+              width: 100%;
+              &:active {
+                color: white;
+              }
+              &:visited {
+                color: white;
+              }
+              &:link {
+                color: white;
+              }
+              padding: 0px 20px;
+              line-height: 60px;
+              font-weight: 700;
+            }
+            height: inherit;
+            display: block;
+            float: left;
+            height: 100%;
+            border-left: 1px solid $menuBorderColor;
+            &:last-child {
+              border-right: 1px solid $menuBorderColor;
+            }
+            &:hover {
+              a {
+                background-color: $menuHoBgColor;
+                color: $menuHoColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    height: 500px;
+  }
+  footer {
+    padding: 5px;
+    width: $wrapperWidth;
+    margin: 0px auto;
+    background-color: $themeColor;
+    ul {
+      width: 900px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      li {
+        cursor: pointer;
+        list-style: none;
+        padding: 5px 10px;
+        color: white;
+        font-weight: bolder;
+        flex-grow: 1;
+        text-align: center;
+        a {
+          color: white;
+          font-weight: bolder;
+          text-decoration: underline;
+        }
+        &:hover {
+          background-color: $menuHoBgColor;
+          a {
+            color: $menuHoColor;
+          }
+        }
+      }
+    }
+  }
+}

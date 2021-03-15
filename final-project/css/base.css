@@ -1,0 +1,121 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+body header div#login-wrapper {
+  width: 1000px;
+  margin: 0px auto;
+  color: #3a5a78;
+  padding: 20px 0px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body header div#login-wrapper span#span-label {
+  float: right;
+  font-size: 25px;
+  font-family: monospace;
+  font-weight: 900;
+}
+body header div#login-wrapper span#span-logout {
+  text-decoration: underline;
+  margin-left: 15px;
+}
+body header div#login-wrapper span#span-logout a {
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+body header div#login-wrapper span#span-logout a,
+body header div#login-wrapper span#span-logout a:link,
+body header div#login-wrapper span#span-logout a:visited {
+  color: #c15050;
+}
+body header div#login-wrapper span#span-logout a:hover {
+  background: #c15050;
+  color: white;
+}
+body header div#menu-wrapper {
+  height: 60px;
+  background-color: #3a5a78;
+}
+body header div#menu-wrapper nav {
+  height: inherit;
+  width: 1000px;
+  margin: 0px auto;
+}
+body header div#menu-wrapper nav ul {
+  height: inherit;
+}
+body header div#menu-wrapper nav ul li {
+  height: inherit;
+  display: block;
+  float: left;
+  height: 100%;
+  border-left: 1px solid #294056;
+}
+body header div#menu-wrapper nav ul li a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0px 20px;
+  line-height: 60px;
+  font-weight: 700;
+}
+body header div#menu-wrapper nav ul li a:active {
+  color: white;
+}
+body header div#menu-wrapper nav ul li a:visited {
+  color: white;
+}
+body header div#menu-wrapper nav ul li a:link {
+  color: white;
+}
+body header div#menu-wrapper nav ul li:last-child {
+  border-right: 1px solid #294056;
+}
+body header div#menu-wrapper nav ul li:hover a {
+  background-color: #324d67;
+  color: #b6d3e9;
+}
+body main {
+  height: 500px;
+}
+body footer {
+  padding: 5px;
+  width: 1000px;
+  margin: 0px auto;
+  background-color: #3a5a78;
+}
+body footer ul {
+  width: 900px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+body footer ul li {
+  cursor: pointer;
+  list-style: none;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bolder;
+  flex-grow: 1;
+  text-align: center;
+}
+body footer ul li a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+body footer ul li:hover {
+  background-color: #324d67;
+}
+body footer ul li:hover a {
+  color: #b6d3e9;
+}
+
+/*# sourceMappingURL=base.css.map */
