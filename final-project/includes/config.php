@@ -32,6 +32,12 @@ switch (THIS_PAGE) {
     case "thanks.php":
         $pageTitle = "thanks page";
         break;
+    case "login.php":
+        $pageTitle = "login page";
+        break;
+    case "register.php":
+        $pageTitle = "register page";
+        break;
     default:
         $pageTitle = "final project page";
         break;

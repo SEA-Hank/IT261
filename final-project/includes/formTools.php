@@ -26,6 +26,26 @@ function isPasswordMatch($key, $val)
     return $val == getparameters("password");
 }
 
+function existData($key, $val)
+{
+    $link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or
+        die(myError(__FILE__, __LINE__, mysqli_connect_error()));
+
+    $val = mysqli_real_escape_string($link, $val);
+    $key = mysqli_real_escape_string($link, $key);
+
+    $user_check_query = "select * from Users where $key = '$val' LIMIT 1 ";
+
+    $result = mysqli_query($link, $user_check_query)  or
+        die(myError(__FILE__, __LINE__, mysqli_error($link)));
+    $isExist =  mysqli_num_rows($result) == 0;
+
+    mysqli_free_result($result);
+    mysqli_close($link);
+
+    return $isExist;
+}
+
 function checkFieldsStatus($form_config)
 {
     $form_status = array("errorMsg" => array(), "isReady" => true);
