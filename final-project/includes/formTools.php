@@ -21,6 +21,11 @@ function isPhoneNumber($key, $val)
     return preg_match("/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/", $val);
 }
 
+function isPasswordMatch($key, $val)
+{
+    return $val == getparameters("password");
+}
+
 function checkFieldsStatus($form_config)
 {
     $form_status = array("errorMsg" => array(), "isReady" => true);
@@ -44,6 +49,16 @@ function checkFieldsStatus($form_config)
     return $form_status;
 }
 
+function ConvertToSQLString($conn, $form_status)
+{
+    foreach ($form_status as $key => $value) {
+        if ($key == "isReady" || $key == "errorMsg") {
+            continue;
+        }
+        $form_status[$key] = mysqli_real_escape_string($conn, $value);
+    }
+}
+
 
 function generateInputFiled($field, $form_status, $config)
 {
@@ -52,7 +67,7 @@ function generateInputFiled($field, $form_status, $config)
     $placeholder = array_key_exists("placeholder", $config) ? $config["placeholder"] : "";
     $value = $form_status[$field];
 ?>
-    <input type="<?= $htmlType ?>" name="<?= $field ?>" id="<?= $field ?>" placeholder="<?= $placeholder ?>" value="<?= $isStick ? $value : "" ?>">
+    <input autocomplete="off" type="<?= $htmlType ?>" name="<?= $field ?>" id="<?= $field ?>" placeholder="<?= $placeholder ?>" value="<?= $isStick ? $value : "" ?>">
 <?php
 }
 
@@ -118,6 +133,7 @@ function generateFormFileds($form_config, $form_status)
         switch ($config["htmlType"]) {
             case "text":
             case "email":
+            case "password":
                 generateInputFiled($field, $form_status, $config);
                 break;
             case "select":

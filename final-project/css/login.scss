@@ -1,0 +1,89 @@
+$themeColor: #3a5a78;
+$menuBorderColor: #294056;
+$menuHoBgColor: #324d67;
+$menuHoColor: #b6d3e9;
+$wrapperWidth: 1000px;
+
+div#login-wrapper {
+  width: $wrapperWidth;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0px;
+  gap: 20px;
+  div#login-image-wrapper {
+    flex-basis: 650px;
+    flex-grow: 0px;
+    flex-shrink: 0px;
+    img {
+      width: 100%;
+    }
+  }
+  div#login-form-wrapper {
+    form#login-form {
+      border-radius: 3px;
+      border: 2px solid $themeColor;
+      width: 460px;
+      padding: 15px;
+      label {
+        padding: 5px 0px;
+        color: $themeColor;
+        display: block;
+        font-size: 20px;
+        font-weight: 900;
+      }
+      input#UserName,
+      input#password {
+        padding: 10px 20px;
+        width: 100%;
+        outline: none;
+      }
+      p.btn-wrapper {
+        padding: 15px 0px;
+        input#submit-btn {
+          letter-spacing: 2px;
+          width: 100%;
+          display: block;
+          padding: 10px;
+          background-color: $themeColor;
+          color: white;
+          outline: none;
+          border-radius: 3px;
+          border: 1px solid $themeColor;
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: 900;
+          &:hover {
+            color: $menuHoColor;
+            background-color: $menuHoBgColor;
+          }
+        }
+      }
+      p.btn-wrapper-2 {
+        text-align: center;
+        color: #474b55;
+        a {
+          text-decoration: underline;
+          color: $themeColor;
+          font-weight: 900;
+        }
+      }
+      div.error-list {
+        padding: 5px;
+        ul {
+          li {
+            color: red;
+            font-style: italic;
+            list-style: none;
+            font-size: 16px;
+          }
+        }
+      }
+      span.error-msg {
+        color: red;
+        font-style: italic;
+        font-size: 16px;
+      }
+    }
+  }
+}

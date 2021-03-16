@@ -6,24 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/base.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <title><?= $pageTitle ?></title>
 </head>
 
 <body>
     <header>
         <div id="login-wrapper">
-            <span id="span-login-info">Hello, <b>Hank</b></span>
-            <span id="span-logout"> <a href="www.google.com">logout</a></span>
+            <?php if (isset($_SESSION['UserName'])) : ?>
+                <span id="span-login-info">Hello, <b><?= $_SESSION["UserName"] ?></b></span>
+                <span id="span-logout"> <a href="./login.php?logout=y">logout</a></span>
+            <?php endif; ?>
             <span id="span-label">Best cities for retirees</span>
         </div>
         <div id="menu-wrapper">
             <nav>
                 <ul>
-                    <li><a href="www.google.com">HOME</a></li>
-                    <li><a href="www.google.com">SWITCH</a></li>
-                    <li><a href="www.google.com">CITYS</a></li>
-                    <li><a href="www.google.com">CONTACT</a></li>
-                    <li><a href="www.google.com">ABOUT</a></li>
+                    <?php foreach ($nav  as $key => $value) : ?>
+                        <li><a href="<?= $key ?>"><?= $value ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </nav>
         </div>

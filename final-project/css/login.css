@@ -1,0 +1,81 @@
+div#login-wrapper {
+  width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0px;
+  gap: 20px;
+}
+div#login-wrapper div#login-image-wrapper {
+  flex-basis: 650px;
+  flex-grow: 0px;
+  flex-shrink: 0px;
+}
+div#login-wrapper div#login-image-wrapper img {
+  width: 100%;
+}
+div#login-wrapper div#login-form-wrapper form#login-form {
+  border-radius: 3px;
+  border: 2px solid #3a5a78;
+  width: 460px;
+  padding: 15px;
+}
+div#login-wrapper div#login-form-wrapper form#login-form label {
+  padding: 5px 0px;
+  color: #3a5a78;
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+}
+div#login-wrapper div#login-form-wrapper form#login-form input#UserName,
+div#login-wrapper div#login-form-wrapper form#login-form input#password {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+}
+div#login-wrapper div#login-form-wrapper form#login-form p.btn-wrapper {
+  padding: 15px 0px;
+}
+div#login-wrapper div#login-form-wrapper form#login-form p.btn-wrapper input#submit-btn {
+  letter-spacing: 2px;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background-color: #3a5a78;
+  color: white;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #3a5a78;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 900;
+}
+div#login-wrapper div#login-form-wrapper form#login-form p.btn-wrapper input#submit-btn:hover {
+  color: #b6d3e9;
+  background-color: #324d67;
+}
+div#login-wrapper div#login-form-wrapper form#login-form p.btn-wrapper-2 {
+  text-align: center;
+  color: #474b55;
+}
+div#login-wrapper div#login-form-wrapper form#login-form p.btn-wrapper-2 a {
+  text-decoration: underline;
+  color: #3a5a78;
+  font-weight: 900;
+}
+div#login-wrapper div#login-form-wrapper form#login-form div.error-list {
+  padding: 5px;
+}
+div#login-wrapper div#login-form-wrapper form#login-form div.error-list ul li {
+  color: red;
+  font-style: italic;
+  list-style: none;
+  font-size: 16px;
+}
+div#login-wrapper div#login-form-wrapper form#login-form span.error-msg {
+  color: red;
+  font-style: italic;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=login.css.map */

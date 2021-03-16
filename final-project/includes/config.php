@@ -1,40 +1,39 @@
 <?php
+session_start();
 include 'databaseTools.php';
 define("THIS_PAGE", basename($_SERVER["PHP_SELF"]));
 
+
 $nav = array(
     "index.php" => "Home",
-    "about.php" => "about",
-    "daily.php" => "Daily",
-    "keyboards.php" => "Keyboards",
-    "contact.php" => "Contact",
-    "gallery.php" => "Gallery",
+    "switch.php" => "SWITCH",
+    "citys.php" => "CITYS",
+    "contact.php" => "CONTACT",
+    "about.php" => "ABOUT",
+    "login.php" => "LOGIN"
 );
 
 switch (THIS_PAGE) {
     case "index.php":
-        $pageTitle = "Home page of our Website Project";
+        $pageTitle = "home page";
         break;
-    case "about.php":
-        $pageTitle = "About page of our Website Project";
+    case "switch.php":
+        $pageTitle = "switch page";
         break;
-    case "daily.php":
-        $pageTitle = "Daily page of our Website Project";
-        break;
-    case "keyboards.php":
-        $pageTitle = "keyboards page of our Website Project";
+    case "citys.php":
+        $pageTitle = "citys page";
         break;
     case "contact.php":
-        $pageTitle = "Contact page of our Website Project";
+        $pageTitle = "contact page";
         break;
-    case "gallery.php":
-        $pageTitle = "Gallery page of our Website Project";
+    case "about.php":
+        $pageTitle = "about page";
         break;
     case "thanks.php":
-        $pageTitle = "thanks page of our Website Project";
+        $pageTitle = "thanks page";
         break;
     default:
-        $pageTitle = "Hank's Website Project";
+        $pageTitle = "final project page";
         break;
 }
 

@@ -8,6 +8,8 @@ body {
   background-color: #f7f7f7;
 }
 body header div#login-wrapper {
+  min-height: 65px;
+  position: relative;
   width: 1000px;
   margin: 0px auto;
   color: #3a5a78;
@@ -20,6 +22,9 @@ body header div#login-wrapper span#span-label {
   font-size: 25px;
   font-family: monospace;
   font-weight: 900;
+  position: absolute;
+  right: 20px;
+  top: 16px;
 }
 body header div#login-wrapper span#span-logout {
   text-decoration: underline;
@@ -81,9 +86,6 @@ body header div#menu-wrapper nav ul li:last-child {
 body header div#menu-wrapper nav ul li:hover a {
   background-color: #324d67;
   color: #b6d3e9;
-}
-body main {
-  height: 500px;
 }
 body footer {
   padding: 5px;

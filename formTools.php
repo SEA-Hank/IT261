@@ -67,7 +67,7 @@ function generateInputFiled($field, $form_status, $config)
     $placeholder = array_key_exists("placeholder", $config) ? $config["placeholder"] : "";
     $value = $form_status[$field];
 ?>
-    <input type="<?= $htmlType ?>" name="<?= $field ?>" id="<?= $field ?>" placeholder="<?= $placeholder ?>" value="<?= $isStick ? $value : "" ?>">
+    <input autocomplete="off" type="<?= $htmlType ?>" name="<?= $field ?>" id="<?= $field ?>" placeholder="<?= $placeholder ?>" value="<?= $isStick ? $value : "" ?>">
 <?php
 }
 

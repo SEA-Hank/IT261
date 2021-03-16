@@ -13,6 +13,8 @@ body {
   background-color: #f7f7f7;
   header {
     div#login-wrapper {
+      min-height: 65px;
+      position: relative;
       width: $wrapperWidth;
       margin: 0px auto;
       color: $themeColor;
@@ -24,6 +26,9 @@ body {
         font-size: 25px;
         font-family: monospace;
         font-weight: 900;
+        position: absolute;
+        right: 20px;
+        top: 16px;
       }
       span#span-logout {
         text-decoration: underline;
@@ -91,7 +96,7 @@ body {
     }
   }
   main {
-    height: 500px;
+    //height: 500px;
   }
   footer {
     padding: 5px;
