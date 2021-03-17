@@ -1,0 +1,41 @@
+$themeColor: #3a5a78;
+$menuBorderColor: #294056;
+$menuHoBgColor: #324d67;
+$menuHoColor: #b6d3e9;
+$wrapperWidth: 800px;
+
+div#city-view-wrapper {
+  width: $wrapperWidth;
+  margin: 0px auto;
+  p#city-title {
+    padding: 30px 0px 10px 0px;
+    font-size: 35px;
+    font-weight: 900;
+  }
+  div#image-wrapper {
+    width: 600px;
+    img {
+      width: inherit;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px #999;
+    }
+  }
+  div#features {
+    padding: 20px 20px 0px 20px;
+  }
+  div#description {
+    padding: 10px;
+    text-indent: 30px;
+  }
+  div#information {
+    width: $wrapperWidth;
+    margin: 0px auto;
+    font-style: italic;
+    padding: 20px;
+    a,
+    a:link,
+    a:visited {
+      color: #c15050;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+div#city-view-wrapper {
+  width: 800px;
+  margin: 0px auto;
+}
+div#city-view-wrapper p#city-title {
+  padding: 30px 0px 10px 0px;
+  font-size: 35px;
+  font-weight: 900;
+}
+div#city-view-wrapper div#image-wrapper {
+  width: 600px;
+}
+div#city-view-wrapper div#image-wrapper img {
+  width: inherit;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #999;
+}
+div#city-view-wrapper div#features {
+  padding: 20px 20px 0px 20px;
+}
+div#city-view-wrapper div#description {
+  padding: 10px;
+  text-indent: 30px;
+}
+div#city-view-wrapper div#information {
+  width: 800px;
+  margin: 0px auto;
+  font-style: italic;
+  padding: 20px;
+}
+div#city-view-wrapper div#information a,
+div#city-view-wrapper div#information a:link,
+div#city-view-wrapper div#information a:visited {
+  color: #c15050;
+}
+
+/*# sourceMappingURL=city-view.css.map */
