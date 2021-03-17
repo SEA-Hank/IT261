@@ -7,7 +7,7 @@ define("THIS_PAGE", basename($_SERVER["PHP_SELF"]));
 $nav = array(
     "index.php" => "Home",
     "switch.php" => "SWITCH",
-    "citys.php" => "CITYS",
+    "cities.php" => "CITIES",
     "contact.php" => "CONTACT",
     "about.php" => "ABOUT",
     "login.php" => "LOGIN"
@@ -20,8 +20,8 @@ switch (THIS_PAGE) {
     case "switch.php":
         $pageTitle = "switch page";
         break;
-    case "citys.php":
-        $pageTitle = "citys page";
+    case "cities.php":
+        $pageTitle = "cities page";
         break;
     case "contact.php":
         $pageTitle = "contact page";

@@ -1,0 +1,35 @@
+div#cities-wrapper {
+  width: 1000px;
+  padding: 50px 0px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+div#cities-wrapper div.city-wrapper {
+  width: 50%;
+  padding: 15px;
+}
+div#cities-wrapper div.city-wrapper img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #999;
+}
+div#cities-wrapper div.city-wrapper p.city-name {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+div#cities-wrapper div.city-wrapper p.city-info {
+  padding: 10px 0px;
+}
+div#cities-wrapper div.city-wrapper p.city-info a,
+div#cities-wrapper div.city-wrapper p.city-info a:link,
+div#cities-wrapper div.city-wrapper p.city-info a:visited {
+  color: #3a5a78;
+  font-weight: 900;
+}
+div#cities-wrapper div.city-wrapper p.city-info a:hover {
+  color: #ef8d32;
+}
+
+/*# sourceMappingURL=cities.css.map */

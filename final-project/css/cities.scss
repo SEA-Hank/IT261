@@ -1,0 +1,39 @@
+$themeColor: #3a5a78;
+$menuBorderColor: #294056;
+$menuHoBgColor: #324d67;
+$menuHoColor: #b6d3e9;
+$wrapperWidth: 1000px;
+
+div#cities-wrapper {
+  width: $wrapperWidth;
+  padding: 50px 0px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  div.city-wrapper {
+    width: 50%;
+    padding: 15px;
+    img {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px #999;
+    }
+    p.city-name {
+      font-size: 18px;
+      font-weight: 700;
+      padding: 10px 0px;
+    }
+    p.city-info {
+      padding: 10px 0px;
+      a,
+      a:link,
+      a:visited {
+        color: $themeColor;
+        font-weight: 900;
+      }
+      a:hover {
+        color: #ef8d32;
+      }
+    }
+  }
+}
