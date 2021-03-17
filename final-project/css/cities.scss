@@ -37,3 +37,14 @@ div#cities-wrapper {
     }
   }
 }
+div#information {
+  width: $wrapperWidth;
+  margin: 0px auto;
+  font-style: italic;
+  padding: 10px;
+  a,
+  a:link,
+  a:visited {
+    color: #c15050;
+  }
+}

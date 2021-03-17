@@ -24,4 +24,5 @@ include "./includes/header.php";
     mysqli_free_result($result);
     mysqli_close($link); ?>
 </div>
+<div id="information"><a href="https://www.daveramsey.com/blog/best-cities-to-retire">cities information from</a> </div>
 <?php include "./includes/footer.php" ?>

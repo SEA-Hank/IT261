@@ -32,4 +32,16 @@ div#cities-wrapper div.city-wrapper p.city-info a:hover {
   color: #ef8d32;
 }
 
+div#information {
+  width: 1000px;
+  margin: 0px auto;
+  font-style: italic;
+  padding: 10px;
+}
+div#information a,
+div#information a:link,
+div#information a:visited {
+  color: #c15050;
+}
+
 /*# sourceMappingURL=cities.css.map */
