@@ -20,6 +20,14 @@ div#login-wrapper {
     }
   }
   div#login-form-wrapper {
+    > p {
+      color: $themeColor;
+      padding: 5px;
+      span {
+        font-weight: 700;
+        color: #007965;
+      }
+    }
     form#login-form {
       border-radius: 3px;
       border: 2px solid $themeColor;

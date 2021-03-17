@@ -6,6 +6,8 @@ if (isset($_GET["logout"])) {
     session_destroy();
     unset($_SESSION['UserName']);
 }
+$reg_succeeded = isset($_SESSION['reg_succeeded']);
+unset($_SESSION['reg_succeeded']);
 include "./includes/header.php";
 ?>
 <div id="login-wrapper">
@@ -13,6 +15,9 @@ include "./includes/header.php";
         <img src="./images/login.jpeg" alt="login">
     </div>
     <div id="login-form-wrapper">
+        <?php if ($reg_succeeded) : ?>
+            <p>Register <span>succeeded</span>, please login !</p>
+        <?php endif; ?>
         <form id="login-form" autocomplete="off" action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
             <?php
             generateFormFileds($form_config, $form_status);

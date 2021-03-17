@@ -74,9 +74,11 @@ if (isset($_POST["reg_user"])) {
 
         ConvertToSQLString($link, $form_status);
 
-        $password = md5($form_status["password"]);
         $firstName = $form_status["firstName"];
         $lastName = $form_status["lastName"];
+        $UserName = $form_status["UserName"];
+        $Email = $form_status["Email"];
+        $password = md5($form_status["password"]);
 
         $insertSQL = "insert into Users(firstname,lastname,username,email,password) 
                                         value('$firstName','$lastName','$UserName','$Email','$password')";
@@ -85,6 +87,8 @@ if (isset($_POST["reg_user"])) {
             die(myError(__FILE__, __LINE__, mysqli_error($link)));
 
         mysqli_close($link);
+
+        $_SESSION['reg_succeeded'] = "reg_succeeded";
 
         header("Content-type: text/html; charset=utf-8");
         header("Location:login.php");

@@ -14,6 +14,14 @@ div#login-wrapper div#login-image-wrapper {
 div#login-wrapper div#login-image-wrapper img {
   width: 100%;
 }
+div#login-wrapper div#login-form-wrapper > p {
+  color: #3a5a78;
+  padding: 5px;
+}
+div#login-wrapper div#login-form-wrapper > p span {
+  font-weight: 700;
+  color: #007965;
+}
 div#login-wrapper div#login-form-wrapper form#login-form {
   border-radius: 3px;
   border: 2px solid #3a5a78;
