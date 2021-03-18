@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/register.css">
     <link rel="stylesheet" href="./css/cities.css">
     <link rel="stylesheet" href="./css/city-view.css">
+    <link rel="stylesheet" href="./css/about.css">
     <title><?= $pageTitle ?></title>
 </head>
 

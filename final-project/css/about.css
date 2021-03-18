@@ -1,0 +1,17 @@
+div#about-wrapper {
+  padding: 50px 100px;
+  margin: 0px auto;
+}
+div#about-wrapper div#image-wrapper {
+  overflow: scroll;
+}
+div#about-wrapper img {
+  object-fit: contain;
+}
+div#about-wrapper p {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=about.css.map */

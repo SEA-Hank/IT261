@@ -1,0 +1,21 @@
+$themeColor: #3a5a78;
+$menuBorderColor: #294056;
+$menuHoBgColor: #324d67;
+$menuHoColor: #b6d3e9;
+$wrapperWidth: 1000px;
+
+div#about-wrapper {
+  padding: 50px 100px;
+  margin: 0px auto;
+  div#image-wrapper {
+    overflow: scroll;
+  }
+  img {
+    object-fit: contain;
+  }
+  p {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
