@@ -4,6 +4,7 @@ date_default_timezone_set('America/Los_Angeles');
 include 'databaseTools.php';
 define("THIS_PAGE", basename($_SERVER["PHP_SELF"]));
 
+$cssfile = str_replace('php', 'css', THIS_PAGE);
 
 $nav = array(
     "index.php" => "Home",
