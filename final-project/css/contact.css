@@ -1,0 +1,84 @@
+div#contact-wrapper {
+  width: 500px;
+  padding: 50px 0px;
+  margin: 0px auto;
+}
+div#contact-wrapper p#contact-title {
+  font-size: 40px;
+  color: #3a5a78;
+  font-family: cursive;
+}
+div#contact-wrapper form#contact-form {
+  width: 450px;
+}
+div#contact-wrapper form#contact-form label {
+  padding: 10px 0px;
+  display: block;
+  font-size: 18px;
+  font-family: monospace;
+}
+div#contact-wrapper form#contact-form input[type=text] {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+}
+div#contact-wrapper form#contact-form ul li {
+  list-style: none;
+  float: left;
+  display: block;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: text-bottom;
+}
+div#contact-wrapper form#contact-form ul li input {
+  margin-right: 5px;
+  font-size: 18px;
+}
+div#contact-wrapper form#contact-form ul::after {
+  clear: both;
+  display: block;
+  height: 0;
+  width: 0;
+  content: " ";
+}
+div#contact-wrapper form#contact-form p.btn-wrapper {
+  padding: 15px 0px;
+}
+div#contact-wrapper form#contact-form p.btn-wrapper input#submit-btn {
+  letter-spacing: 2px;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background-color: #3a5a78;
+  color: white;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #3a5a78;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 900;
+}
+div#contact-wrapper form#contact-form p.btn-wrapper input#submit-btn:hover {
+  color: #b6d3e9;
+  background-color: #324d67;
+}
+div#contact-wrapper form#contact-form span.error-msg {
+  color: red;
+  font-style: italic;
+  font-size: 16px;
+  display: block;
+}
+div#contact-wrapper form#contact-form p.p-buttons a,
+div#contact-wrapper form#contact-form p.p-buttons a:link,
+div#contact-wrapper form#contact-form p.p-buttons a:visited {
+  color: #3a5a78;
+}
+div#contact-wrapper form#contact-form p.p-buttons a {
+  font-weight: 900;
+}
+div#contact-wrapper form#contact-form p.p-buttons a:hover {
+  color: #ef8d32;
+}
+
+/*# sourceMappingURL=contact.css.map */

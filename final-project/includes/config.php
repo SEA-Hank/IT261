@@ -1,5 +1,6 @@
 <?php
 session_start();
+date_default_timezone_set('America/Los_Angeles');
 include 'databaseTools.php';
 define("THIS_PAGE", basename($_SERVER["PHP_SELF"]));
 
@@ -67,15 +68,15 @@ function getEmailContent()
     $phone = $_SESSION['phone'];
     $gender = $_SESSION['gender'];
     $comments = $_SESSION['comments'];
-    $frameworks = implode(", ", $_SESSION['frameworks']);
-    $position = $_SESSION['position'];
+    $cities = implode(", ", $_SESSION['cities']);
+    $time = $_SESSION['time'];
 
     $body = "First and Last Name:  $firstName $lastName" . PHP_EOL;
     $body .= "Email is: $customerEmail" . PHP_EOL;
     $body .= "Phone Number is: $phone" . PHP_EOL;
     $body .= "Gender is: $gender" . PHP_EOL;
     $body .= "Coments is: $comments" . PHP_EOL;
-    $body .= "Favorite Position: $position" . PHP_EOL;
-    $body .= "Favorite frameworks: $frameworks" . PHP_EOL;
+    $body .= "Time: $time" . PHP_EOL;
+    $body .= "Favorite cities: $cities" . PHP_EOL;
     return $body;
 }

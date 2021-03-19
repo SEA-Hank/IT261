@@ -1,0 +1,20 @@
+$themeColor: #3a5a78;
+$menuBorderColor: #294056;
+$menuHoBgColor: #324d67;
+$menuHoColor: #b6d3e9;
+$wrapperWidth: 1000px;
+
+div#thanks-wrapper {
+  width: $wrapperWidth;
+  margin: 50px auto 0px auto;
+  pre {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  div {
+    img {
+      width: 100%;
+      padding: 10px 0px;
+    }
+  }
+}

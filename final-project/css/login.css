@@ -71,6 +71,9 @@ div#login-wrapper div#login-form-wrapper form#login-form p.btn-wrapper-2 a {
   color: #3a5a78;
   font-weight: 900;
 }
+div#login-wrapper div#login-form-wrapper form#login-form p.btn-wrapper-2 a:hover {
+  color: #ef8d32;
+}
 div#login-wrapper div#login-form-wrapper form#login-form div.error-list {
   padding: 5px;
 }

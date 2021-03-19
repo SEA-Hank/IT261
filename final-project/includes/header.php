@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/cities.css">
     <link rel="stylesheet" href="./css/city-view.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/thanks.css">
     <title><?= $pageTitle ?></title>
 </head>
 

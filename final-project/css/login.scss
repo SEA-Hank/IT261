@@ -74,6 +74,9 @@ div#login-wrapper {
           text-decoration: underline;
           color: $themeColor;
           font-weight: 900;
+          &:hover {
+            color: #ef8d32;
+          }
         }
       }
       div.error-list {
