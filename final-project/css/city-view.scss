@@ -38,4 +38,15 @@ div#city-view-wrapper {
       color: #c15050;
     }
   }
+  a#link-backto-cities {
+    color: $themeColor;
+    font-weight: 900;
+    &:link,
+    &:visited {
+      color: $themeColor;
+    }
+    &:hover {
+      color: #ef8d32;
+    }
+  }
 }

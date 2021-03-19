@@ -33,5 +33,15 @@ div#city-view-wrapper div#information a:link,
 div#city-view-wrapper div#information a:visited {
   color: #c15050;
 }
+div#city-view-wrapper a#link-backto-cities {
+  color: #3a5a78;
+  font-weight: 900;
+}
+div#city-view-wrapper a#link-backto-cities:link, div#city-view-wrapper a#link-backto-cities:visited {
+  color: #3a5a78;
+}
+div#city-view-wrapper a#link-backto-cities:hover {
+  color: #ef8d32;
+}
 
 /*# sourceMappingURL=city-view.css.map */

@@ -39,6 +39,9 @@ include "./includes/header.php";
         </ul>
     </div>
     <div id="description"><?= $cityInfo["description"] ?></div>
+    <div>
+        <a id="link-backto-cities" href="./cities.php">Back to cities list</a>
+    </div>
     <div id="information"><a href="https://www.daveramsey.com/blog/best-cities-to-retire">cities information from</a> </div>
 </div>
 
