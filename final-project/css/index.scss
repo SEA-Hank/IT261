@@ -1,0 +1,62 @@
+$themeColor: #3a5a78;
+$menuBorderColor: #294056;
+$menuHoBgColor: #324d67;
+$menuHoColor: #b6d3e9;
+$wrapperWidth: 1000px;
+
+div#index-wrapper {
+  width: $wrapperWidth;
+  margin: 20px auto 20px auto;
+  p#index-title {
+    color: $themeColor;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 0px 0px 20px 0px;
+  }
+  div#content-wrapper {
+    display: flex;
+    flex-direction: row;
+    div:first-child {
+      flex-basis: 700px;
+      flex-grow: 0;
+      flex-shrink: 0px;
+      img {
+        width: 750px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #999;
+      }
+    }
+    div:last-child {
+      padding: 20px;
+      ul {
+        counter-reset: liCounters;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 900;
+        font-size: 30px;
+        li {
+          padding: 10px 0px;
+          list-style: none;
+          border-bottom: 2px solid $themeColor;
+          &::before {
+            color: $themeColor;
+            width: 32px;
+            counter-increment: liCounters;
+            display: inline-block;
+            content: counter(liCounters) ".  ";
+            font-family: "Merriweather", arial, serif;
+            //font-size: 36px;
+          }
+          a,
+          a:link,
+          a:visited {
+            color: $themeColor;
+            text-decoration: none;
+            &:hover {
+              color: #ef8d32;
+            }
+          }
+        }
+      }
+    }
+  }
+}

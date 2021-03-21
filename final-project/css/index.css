@@ -1,0 +1,59 @@
+div#index-wrapper {
+  width: 1000px;
+  margin: 20px auto 20px auto;
+}
+div#index-wrapper p#index-title {
+  color: #3a5a78;
+  font-weight: 900;
+  font-size: 30px;
+  padding: 0px 0px 20px 0px;
+}
+div#index-wrapper div#content-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+div#index-wrapper div#content-wrapper div:first-child {
+  flex-basis: 700px;
+  flex-grow: 0;
+  flex-shrink: 0px;
+}
+div#index-wrapper div#content-wrapper div:first-child img {
+  width: 750px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #999;
+}
+div#index-wrapper div#content-wrapper div:last-child {
+  padding: 20px;
+}
+div#index-wrapper div#content-wrapper div:last-child ul {
+  counter-reset: liCounters;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+div#index-wrapper div#content-wrapper div:last-child ul li {
+  padding: 10px 0px;
+  list-style: none;
+  border-bottom: 2px solid #3a5a78;
+}
+div#index-wrapper div#content-wrapper div:last-child ul li::before {
+  color: #3a5a78;
+  width: 32px;
+  counter-increment: liCounters;
+  display: inline-block;
+  content: counter(liCounters) ".  ";
+  font-family: "Merriweather", arial, serif;
+}
+div#index-wrapper div#content-wrapper div:last-child ul li a,
+div#index-wrapper div#content-wrapper div:last-child ul li a:link,
+div#index-wrapper div#content-wrapper div:last-child ul li a:visited {
+  color: #3a5a78;
+  text-decoration: none;
+}
+div#index-wrapper div#content-wrapper div:last-child ul li a:hover,
+div#index-wrapper div#content-wrapper div:last-child ul li a:link:hover,
+div#index-wrapper div#content-wrapper div:last-child ul li a:visited:hover {
+  color: #ef8d32;
+}
+
+/*# sourceMappingURL=index.css.map */
