@@ -6,7 +6,7 @@ include "./includes/header.php";
     <p id="index-title">Welcome to my home page</p>
     <div id="content-wrapper">
         <div>
-            <img src="./images/index.jpeg" alt="">
+            <img src="<?= randImages("index") ?>" alt="index-page-image">
         </div>
         <div>
             <ul>
