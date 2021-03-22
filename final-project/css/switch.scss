@@ -1,0 +1,83 @@
+$themeColor: #3a5a78;
+$menuBorderColor: #294056;
+$menuHoBgColor: #324d67;
+$menuHoColor: #b6d3e9;
+$wrapperWidth: 800px;
+
+div#switch-wrapper {
+  width: $wrapperWidth;
+  margin: 0px auto;
+  display: flex;
+  div:first-child {
+    flex-basis: 200px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    ul {
+      padding: 20px;
+      margin-top: 100px;
+      li {
+        text-align: center;
+        list-style: none;
+        height: 30px;
+        line-height: 30px;
+        a {
+          font-weight: 900;
+          display: block;
+          width: 100%;
+          height: 100%;
+          &.hot {
+            color: #c15050;
+          }
+          &.cold {
+            color: #99bbad;
+          }
+          &.warm {
+            color: #d49d42;
+          }
+          &.rainy {
+            color: #5b6d5b;
+          }
+          &.sunny {
+            color: #f2a154;
+          }
+          &:hover {
+            color: $menuHoColor;
+            background-color: $menuHoBgColor;
+          }
+        }
+      }
+    }
+  }
+  div:last-child {
+    &.hot {
+      color: #c15050;
+    }
+    &.cold {
+      color: #99bbad;
+    }
+    &.warm {
+      color: #d49d42;
+    }
+    &.rainy {
+      color: #5b6d5b;
+    }
+    &.sunny {
+      color: #f2a154;
+    }
+    p.city-title {
+      font-weight: 900;
+      font-size: 30px;
+      padding: 20px 0px;
+    }
+    img {
+      width: 500px;
+      border-radius: 3px;
+      box-shadow: 0px 0px 5px #999;
+    }
+    p.city-des {
+      width: 500px;
+      padding: 20px 0px;
+      text-indent: 20px;
+    }
+  }
+}

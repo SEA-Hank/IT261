@@ -12,7 +12,7 @@ include "./includes/header.php";
             <ul>
                 <li><a href="./cities.php">Retired cities</a></li>
                 <li><a href="./contact.php">Contact us</a></li>
-                <li><a href="./index.php">Switch page</a></li>
+                <li><a href="./switch.php">Switch page</a></li>
             </ul>
         </div>
     </div>
