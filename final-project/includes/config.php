@@ -12,7 +12,7 @@ $nav = array(
     "cities.php" => "CITIES",
     "contact.php" => "CONTACT",
     "about.php" => "ABOUT",
-    "login.php" => "LOGIN"
+    // "login.php" => "LOGIN"
 );
 
 switch (THIS_PAGE) {
@@ -39,6 +39,9 @@ switch (THIS_PAGE) {
         break;
     case "register.php":
         $pageTitle = "register page";
+        break;
+    case "city-view.php":
+        $pageTitle = "city-view page";
         break;
     default:
         $pageTitle = "final project page";
@@ -80,4 +83,11 @@ function getEmailContent()
     $body .= "Time: $time" . PHP_EOL;
     $body .= "Favorite cities: $cities" . PHP_EOL;
     return $body;
+}
+
+//isLogin
+if (THIS_PAGE != "login.php" && THIS_PAGE != "register.php") {
+    if (!isset($_SESSION['UserName'])) {
+        redirect("login.php");
+    }
 }
